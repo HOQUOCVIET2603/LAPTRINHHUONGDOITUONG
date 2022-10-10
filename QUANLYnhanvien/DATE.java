@@ -38,9 +38,7 @@ public class DATE {
         this.nam = nam;
     }
 
-   
-    
- public int layNam()
+    public int layNam()
  {
      return nam;
  }
@@ -49,8 +47,4 @@ public class DATE {
  {
      return ngay;
  }
-    
-    
-   
-    
-}
+ }
