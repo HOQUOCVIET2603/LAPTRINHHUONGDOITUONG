@@ -7,12 +7,14 @@ public class MainQLNV {
     {
     QLNV ds[] = new QLNV[5];
     DATE date = new DATE();
+        //MENU quy ước
         System.out.println("GIAM DOC = 1");
         System.out.println("PHO GIAM DOC = 2");
         System.out.println("TRUONG PHONG = 3");
         System.out.println("PHO PHONG  = 4");
         System.out.println("NHAN VIEN = 5");
         System.out.println("---------------------------------");
+        //Nhap thong tin Nhan vien
 ds[0] = new QLNV("NGUYEN VAN A", new DATE(23, 6, 1999), 1, 2, 100000);
 ds[1] = new QLNV("NGUYEN VAN B",new DATE(20, 7, 1998), 2, 2, 10000);
 ds[2] = new QLNV("NGUYEN VAN C",new DATE(21, 8, 1997), 3, 2, 1000);  
@@ -88,11 +90,8 @@ System.out.println(ds[4].layHoten());
       if(ds[i].layNgaythangnamsinh().layNam() <= min)
       {
           min = ds[i].layNgaythangnamsinh().layNam();
-          
-      }
-     
-      
-  }
+       }
+   }
    
        
      for ( int i = 0 ; i <= 4 ; i++)
@@ -104,9 +103,5 @@ System.out.println(ds[4].layHoten());
              System.out.println(min);
          }
      }
-    
-      
-       
-        
-    }
+   }
 }
